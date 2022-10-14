@@ -6,7 +6,7 @@
 /* HEADER */
 .navbar{
 
-    background-color: darkblue;
+    background-color: #06063e;
     height: 122px;
     width: 100%;
     position: sticky;
@@ -39,7 +39,7 @@ nav .list .name a{
     text-transform: uppercase;
 }
 .name>a.active,a:hover{
-    background:darkblue ;
+    background:rgb(9, 0, 136) ;
     transition: 1s
 }
 .checkbtn{

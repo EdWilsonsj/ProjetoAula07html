@@ -1,135 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RECIFE A VENEZA BRASILEIRA</title>
-</head>
-<body>
-    <header>
-
-        <img src="recursos/gife.gif" alt="Banner Recife" height="400" width="1200" >
-        <nav>
-            <ul>
-                <li><a href="Principal.html">Início</a></li>
-                <li><a href="HistoriaRECIFE.html">História</a></li>
-                <li><a href="TurismoRecife.html">Pontos Turísticos</a></li>
-                <li><a href="contato.html">Contato</a></li>  
-            </ul> 
-                  
-            <form>
-                <input type="search" name="searchbar1" placeholder="Pesquise aqui..." size="50">
-                <input type="submit" value="Search">
-              </form>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/principal.css">
+        <script src="https://kit.fontawesome.com/f3b7b8b654.js" crossorigin="anonymous"></script>
+        <title>nav bar</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Playfair+Display&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label for="toggler" class="logo">Recife</label>
+           
+                <ul class="list">
+                    <li class="name"><a href="">Início</a></li>
+                    <li class="name"><a href="" >História</a></li>
+                    <li class="name"><a href="" >Pontos Turísticos</a></li>
+                    <li class="name"><a href="" >Contato</a></li>
+                </ul>     
         </nav>
-    </header>
 
-
-    <main>
-        <section>
-            <h1>RECIFE</h1>
-            <p>
-                    A origem do Recife remonta à terceira década do Século XVI, quando era uma estreita faixa de areia protegida por uma linha de arrecifes que formava um ancoradouro. Devido as suas características físicas favoráveis, o local passou a abrigar um porto. E no entorno dele, que servia a Vila de Olinda, formou-se um povoado com cerca de 200 habitantes, em sua maioria, marinheiros, carregadores e pescadores. O assentamento ocupava a península correspondente ao que é hoje o Bairro do Recife.
-                Por se tratar de região portuária, a atividade comercial desenvolveu-se rapidamente impulsionando o crescimento do povoado. E em 1537, a constituição da Vila do Recife é registrada. No século XVII, com o desenvolvimento econômico da colônia, o porto prosperou favorecendo a expansão da vila que toma forma de cidade. A atividade açucareira também cresceu e as margens dos cursos d’água passaram a serem ocupadas por engenhos e casebres, enquanto os rios tornaram-se caminhos navegáveis para transporte dos produtos.
-                Em 1630, Olinda, então centro da capitania, é invadida e incendiada por holandeses.
-            </p>
-            <p>
-                Contudo, os invasores se estabeleceram nas terras baixas do Recife, seja porque o sítio de Olinda não favorecia aos seus interesses militares e comerciais, seja pela semelhança do Recife com a Holanda. Desse modo, colonos, soldados, habitantes de Olinda e imigrantes judeus iniciaram a ocupação da Vila do Recife.
-                A partir do Século XVIII, o desenvolvimento da cidade se apóia no comércio externo e a urbanização portuguesa incide predominantemente sobre o antigo território holandês, de forma espontânea, caracterizada por ruas estreitas, que se abrem em pátios onde se destaca a construção religiosa.
-                No Século XIX, a cidade já apresenta um tecido densamente urbanizado que corresponde ao atual centro histórico surgido dos aterros das áreas alagadas e mangues, a partir da ocupação holandesa.
-                sé.
-            </p>
-        <a href="HistoriaRECIFE.html">Veja mais sobre a cidade e suas curiosidades!</a>
+    <main class="container_principal">
+        <div class="container1">
+            <section class="history">
+                <h1 class="titulo_principal">RECIFE</h1>
+                <p>
+                        A origem do Recife remonta à terceira década do Século XVI, quando era uma estreita faixa de areia protegida por uma linha de arrecifes que formava um ancoradouro. Devido as suas características físicas favoráveis, o local passou a abrigar um porto. E no entorno dele, que servia a Vila de Olinda, formou-se um povoado com cerca de 200 habitantes, em sua maioria, marinheiros, carregadores e pescadores. O assentamento ocupava a península correspondente ao que é hoje o Bairro do Recife.
+                    Por se tratar de região portuária, a atividade comercial desenvolveu-se rapidamente impulsionando o crescimento do povoado. E em 1537, a constituição da Vila do Recife é registrada. No século XVII, com o desenvolvimento econômico da colônia, o porto prosperou favorecendo a expansão da vila que toma forma de cidade. A atividade açucareira também cresceu e as margens dos cursos d’água passaram a serem ocupadas por engenhos e casebres, enquanto os rios tornaram-se caminhos navegáveis para transporte dos produtos.
+                    Em 1630, Olinda, então centro da capitania, é invadida e incendiada por holandeses.
+                </p>
+                <p>
+                    Contudo, os invasores se estabeleceram nas terras baixas do Recife, seja porque o sítio de Olinda não favorecia aos seus interesses militares e comerciais, seja pela semelhança do Recife com a Holanda. Desse modo, colonos, soldados, habitantes de Olinda e imigrantes judeus iniciaram a ocupação da Vila do Recife.
+                    A partir do Século XVIII, o desenvolvimento da cidade se apóia no comércio externo e a urbanização portuguesa incide predominantemente sobre o antigo território holandês, de forma espontânea, caracterizada por ruas estreitas, que se abrem em pátios onde se destaca a construção religiosa.
+                    No Século XIX, a cidade já apresenta um tecido densamente urbanizado que corresponde ao atual centro histórico surgido dos aterros das áreas alagadas e mangues, a partir da ocupação holandesa.
+                        
+                </p>
+            <div class="buttons" id="button_curiosity">
+                <a href="HistoriaRECIFE.html">Veja mais sobre a cidade e suas curiosidades!</a>
+            </div>
         </section>
-        <section>
-            <h2>IMAGENS DOS PONTOS TURISTICOS</h2>
-            <ol>
-                <li>Instituto Ricardo Brennand</li>
-                <li>Praia de Boa Viagem</li>    
-                <li>Centro Cultural Cais do Sertão</li>
-                <li>Mirabilandia</li>
-            </ol>
-            <ol>
-                <li><img src="recursos/ricardo.jpeg" alt="">Instituto Ricardo Brennand</li>
-                <li><img src="recursos/praia.jpeg" alt="">Praia de Boa Viagem</li>
-                <li><img src="recursos/cais.jpeg" alt="cais">Centro Cultural Cais do Sertão</li>
-                <li><img src="recursos/mira.jpeg" alt="">Mirabilandia</li>
-            </ol>
-               <a href="TurismoRecife.html">Veja mais sobre os pontos turísticos!</a>
+        </div>
+
+
+
+        <section class="container_turist">
+            <h2>ALGUNS PONTOS TURISTICOS</h2>
+
+            <div class="container_img_turism">
+                <div class="pt_turism_img" id="img_ricardo">
+                    <img src="recursos/ricardo.jpeg" alt="Instituto Ricardo B.">
+                    <p>Instituto Ricardo Brennand</p>
+                </div>
+                <div class="pt_turism_img" id="img_praia">
+                    <img src="recursos/praia.jpeg" alt="Praia de Boa Viagem">
+                    <p> Praia de Boa Viagem</p>
+                </div>
+                <div class="pt_turism_img" id="img_cais">
+                    <img src="recursos/cais.jpeg" alt="Cais do Sertão">
+                    <p>Centro Cultural Cais do Sertão</p>
+                </div>
+                <div class="pt_turism_img" id="img_mira">
+                    <img src="recursos/mira.jpeg" alt="Mirabilandia">
+                    <p>Mirabilandia</p>
+                </div>
+            </div>
+
+
+            <div class="buttons" id="button_turism">
+                <a href="TurismoRecife.html">Veja mais sobre os pontos turísticos!</a>
+            </div>
+
         </section>
-
-
 
         <footer>
-            <div>
-                <h3>Agradecemos a visita!</h3>
-
-            <section>            
-                <a>Faça um comentário!</a>
-                <form>
-                    <textarea cols="100" placeholder="Comente aqui!"></textarea>
-                    <input type="submit" value="Search">
-                </form>
-            </section>
-
-
+            <div class="container_geral_footer">
+                <h2>Agradecemos a visita!</h2>
+    
                 <section>
-                    <Nav>
-                        <h4>Verifique em nosso site:</h4>
-                        <a href="Principal.html">Início</a>
-                        <a href="HistoriaRECIFE.html">História</a>
-                        <a href="TurismoRecife.html">Pontos Turísticos</a>
-                        <a href="contato.html">Contato</a>
-                    </Nav>
-                </section>
-
-                <section>
-                    <Nav>
-
-                        <dl>
-                            <dt><h3>Entre em contato:</h3></dt>
-                            <dd><a href="contato.html">NOSSA PÁGINA</a></dd>
-                            <dd>Telefone:(XX)XXXXX-XXXX</dd>
-                            <dd>email:xxxxx@gmail.com</dd>
-                        </dl>
-
-                        <dl>
-                            <dt><h3>Visite nossas redes sociais:</h3></dt>
-                                <dd>
-                                    <figure>
+                        <div class="footer_contat">
+                            <h3>Entre em contato:</h3>  
+                            <div class="container_footer_contat">
+                                <div class="contaticon">   
+                                    <img src="recursos/pag-white.png"/>                             
+                                    <a href="contato.html">NOSSA PÁGINA</a>
+                                </div>
+                                <div class="contaticon">
+                                    <img src="recursos/phone-white.png"/>
+                                    <p>Telefone:</p><p> (XX)XXXXX-XXXX</p>
+                                </div>
+                                <div class="contaticon">
+                                    <img src="recursos/mail-white.png"/>
+                                    <p>Email:</p><p>xxxxx@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="footer_social">
+                            <h3>Visite nossas redes sociais:</h3> 
+                            <div class="container_social">
+                                <div>
+                                    <figure class="social_icon">
                                         <a href="https://www.facebook.com/places/O-que-fazer-em-Recife/101883789854098/">
-                                            <img src="recursos/fb.png" alt="facebook" width="40" height="40">
+                                            <img src="recursos/fb.png" alt="facebook" width="60" height="60">
                                         </a>   
-                                        <a href="https://www.facebook.com/places/O-que-fazer-em-Recife/101883789854098/">Facebook</a>   
+                                        <a href="https://www.facebook.com/places/O-que-fazer-em-Recife/101883789858098/">Facebook</a>   
                                     </figure>
-                                </dd>
+                                </div>
                                 
-                                <dd>
-                                    <figure>
+                                <div>
+                                    <figure class="social_icon">
                                         <a href="https://www.instagram.com/visitrecife/">
-                                            <img src="recursos/insta.png" alt="instagram" width="40" height="40">
+                                            <img src="recursos/insta.png" alt="instagram" width="60" height="60">
                                         </a>   
                                         <a href="https://www.instagram.com/visitrecife/">Instagram</a>
                                     </figure>
-                                </dd> 
-
-                                <dd>
-                                    <figure>
+                                </div> 
+    
+                                <div>
+                                    <figure class="social_icon">
                                         <a href="https://twitter.com/prefrecife">
-                                            <img src="recursos/twit.png" alt="twitter" width="40" height="40">
+                                            <img src="recursos/twit.png" alt="twitter" width="60" height="60">
                                         </a>   
                                         <a href="https://twitter.com/prefrecife">Twitter</a>
                                     </figure>
-                                </dd>
-                        </dl>   
-                    </Nav>
+                                </div>
+                            </div>  
+                                
+                        </div>   
                 </section>
-   
+    
             </div>
-
+    
             <small>Página criada para resolução do exercício em grupo da Aula 07 de HTML, proporcionado pela Alpha Edtech.</small>
         </footer>
+           
 
     </main>
 </body>
