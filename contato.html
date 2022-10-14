@@ -4,174 +4,165 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Playfair+Display&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f3b7b8b654.js" crossorigin="anonymous"></script>
     <title>Página de contato</title>
+    <link rel="stylesheet" href="contato.css">
 </head>
 <body>
     <header>
-
-        <img src="recursos/gife.gif" alt="Banner Recife" height="400" width="1200" >
-        <nav>
-            <ul>
-                <li><a href="Principal.html">Início</a></li>
-                <li><a href="HistoriaRECIFE.html">História</a></li>
-                <li><a href="TurismoRecife.html">Pontos Turísticos</a></li>
-                <li><a href="contato.html">Contato</a></li>  
-            </ul> 
-                  
-            <form>
-                <input type="search" name="searchbar1" placeholder="Pesquise aqui..." size="50">
-                <input type="submit" value="Search">
-              </form>
+        <nav class="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label for="toggler" class="logo">Recife</label>
+           
+                <ul class="list">
+                    <li class="name"><a href="">Início</a></li>
+                    <li class="name"><a href="" >História</a></li>
+                    <li class="name"><a href="" >Pontos Turísticos</a></li>
+                    <li class="name"><a href="" >Contato</a></li>
+                </ul>     
         </nav>
     </header>
     <main>
-        <section>
-            <h1>CONTATO</h1>
-            <h2><a href="Principal.html">Home/Página Principal</a></h2>
+        <section class="container1">
+            <section id="container1-contact-form">
+                <h1>CONTATO</h1>
+                <div id="container1-message">
+
+                    <p>Dúvidas? Sugestões? Preencha o formulário e nos envie uma mensagem:</p>
+
+                </div>
+
+                <form id="contact-form" autocomplete="on">
+                    
+                        <input type="text" id="name" placeholder="Nome">
+                    
+                    
+                        <input type="email" name="email" id="email" placeholder="E-mail">
+                    
+                    
+                        <input type="tel" id="phone" name="phone" placeholder="Tel: (00)12345-6789" pattern="[0-9]{2}[0-9]{5}[0-9]{4}">
+                    
+                    
+                        <input type="text" id="state" placeholder="Estado" >
+                    
+                    
+                        <input type="text" name="" id="city" placeholder="Cidade">
+
+                        <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensagem"></textarea>
+                        <div id="button">
+                            <button type="submit">Enviar</button>
+                        </div>    
+                    </div>
+                </form>  
+            </section> 
         </section>
-        <section>
-            <div>
-                <p>Dúvidas? Sugestões? Preencha o formulário e nos envie uma mensagem:</p>
-            </div>
-        
-            <form autocomplete="on">
-                <div>
-                    <label for="name">Nome: </label>
-                    <input type="text" id="name">
-                </div><br>
-                <div>
-                    <label for="email">E-mail: </label>
-                    <input type="email" name="email" id="email">
-                </div><br>
-                <div>
-                    <label for="phone">Telefone: </label>
-                    <input type="tel" id="phone" name="phone" placeholder="(00)12345-6789" pattern="[0-9]{2}[0-9]{5}[0-9]{4}">
-                </div><br>
-                <div>
-                    <label for="state">Estado: </label>
-                    <input type="text" id="state">
-                </div><br>
-                <div>
-                    <label for="city">Cidade:</label>
-                    <input type="text" name="" id="city">
-                </div><br>            
-                <div>
-                    <label for="message">Escreva sua mensagem: </label><br>
-                    <textarea name="message" id="message" cols="30" rows="10">
-                    </textarea><br>
-                    <button type="submit">Enviar</button>
-                </div>
-            </form>  
-        </section> 
-        <section>
-            <div>
+        <section id="container2-contact">
+            <div id="container2-tittle">
                 <h3>Outras formas de contato: </h3>
-            </div><br>
-            <article>
-                <figure>
-                    <img src= "./recursos/Ed.jpeg" alt= "Homem sorrindo"width="250px" height="250px" >
-                </figure>
-                <div>
-                    <p><b>Ed Wilson dos Santos</b></p>
-                    <p> Telefone: (88) 98652-7563</p>
-                </div>
-            </article><br>
-            <article>
-                <figure>
-                    <img src="./recursos/Filipe.jpeg"  alt="Homem sorrindo" width="250px" height="250px">
-                </figure>
-                <div>
-                    <p><b>Filipe Gomes</b></p>
-                    <p>Telefone: (88)95748-3596</p>
-                </div>
-            </article><br>
-            <article>
-                <figure>
-                    <img src= "./recursos/Gabi.jpeg"  alt="Mulher sorrindo" width="250px" height="250px">
-                </figure>
-                <div>
-                    <p><b>Gabriela Rayla</b></p>
-                    <p>Telefone: (88) 98245-7481</p>
-                </div>
-            </article><br>
-            <article>
-                <figure>
-                    <img src="./recursos/Joao.jpeg" alt="Homem sorrindo" width="250px" height="250px">
-                </figure>
-                <div>
-                    <p> <b>João Victor</b></p>
-                    <p>Telefone: (88)98413-0593</p>
-                </div>
-            </article>
-        </section>     
+            </div>
+            <div id="container2-contact-people">
+                <article class="container2-each-people">
+                    <figure>
+                        <img src= "./recursos/Ed.jpeg" alt= "Homem sorrindo">
+                    </figure>
+                    <div>
+                        <p class="name-person">Ed Wilson</p>
+                        <p> Telefone: (88) 98652-7563</p>
+                    </div>
+                </article>
+                <article class="container2-each-people">
+                    <figure>
+                        <img src="./recursos/Filipe.jpeg"  alt="Homem sorrindo">
+                    </figure>
+                    <div>
+                        <p class="name-person">Filipe Gomes</p>
+                        <p>Telefone: (88)95748-3596</p>
+                    </div>
+                </article>
+                <article class="container2-each-people">
+                    <figure>
+                        <img src= "./recursos/Gabi.jpeg"  alt="Mulher sorrindo">
+                    </figure>
+                    <div>
+                        <p class="name-person">Gabriela Rayla</p>
+                        <p>Telefone: (88) 98245-7481</p>
+                    </div>
+                </article>
+                <article class="container2-each-people">
+                    <figure>
+                        <img src="./recursos/Joao.jpeg" alt="Homem sorrindo">
+                    </figure>
+                    <div>
+                        <p class="name-person">João Victor</p>
+                        <p>Telefone: (88)98413-0593</p>
+                    </div>
+                </article>
+            </div>
+        </section>  
+ 
     </main>
     <footer>
-        <div>
-            <h3>Agradecemos a visita!</h3>
-
-        <section>            
-            <a>Faça um comentário!</a>
-            <form>
-                <textarea cols="100" placeholder="Comente aqui!"></textarea>
-                <input type="submit" value="Search">
-            </form>
-        </section>
-
-
+        <div class="container_geral_footer">
+            <h2>Agradecemos a visita!</h2>
             <section>
-                <Nav>
-                    <h4>Verifique em nosso site:</h4>
-                    <a href="Principal.html">Início</a>
-                    <a href="HistoriaRECIFE.html">História</a>
-                    <a href="TurismoRecife.html">Pontos Turísticos</a>
-                    <a href="contato.html">Contato</a>
-                </Nav>
-            </section>
+                    <div class="footer_contat">
+                        <h3>Entre em contato:</h3>  
+                        <div class="container_footer_contat">
+                            <div class="contaticon">   
+                                <img src="recursos/pag-white.png"/>                             
+                                <a href="contato.html">NOSSA PÁGINA</a>
+                            </div>
+                            <div class="contaticon">
+                                <img src="recursos/phone-white.png"/>
+                                <p>Telefone:</p><p> (XX)XXXXX-XXXX</p>
+                            </div>
+                            <div class="contaticon">
+                                <img src="recursos/mail-white.png"/>
+                                <p>Email:</p><p>xxxxx@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
 
-            <section>
-                <Nav>
-
-                    <dl>
-                        <dt><h3>Entre em contato:</h3></dt>
-                        <dd><a href="contato.html">NOSSA PÁGINA</a></dd>
-                        <dd>Telefone:(XX)XXXXX-XXXX</dd>
-                        <dd>email:xxxxx@gmail.com</dd>
-                    </dl>
-
-                    <dl>
-                        <dt><h3>Visite nossas redes sociais:</h3></dt>
-                            <dd>
-                                <figure>
+                    <div class="footer_social">
+                        <!-- <h3>Visite nossas redes sociais:</h3>  -->
+                        <div class="container_social">
+                            <div>
+                                <figure class="social_icon">
                                     <a href="https://www.facebook.com/places/O-que-fazer-em-Recife/101883789854098/">
-                                        <img src="recursos/fb.png" alt="facebook" width="40" height="40">
+                                        <img src="recursos/fb.png" alt="facebook">
                                     </a>   
-                                    <a href="https://www.facebook.com/places/O-que-fazer-em-Recife/101883789854098/">Facebook</a>   
+                                    <a href="https://www.facebook.com/places/O-que-fazer-em-Recife/101883789858098/">Facebook</a>   
                                 </figure>
-                            </dd>
+                            </div>
                             
-                            <dd>
-                                <figure>
+                            <div>
+                                <figure class="social_icon">
                                     <a href="https://www.instagram.com/visitrecife/">
-                                        <img src="recursos/insta.png" alt="instagram" width="40" height="40">
+                                        <img src="recursos/insta.png" alt="instagram">
                                     </a>   
                                     <a href="https://www.instagram.com/visitrecife/">Instagram</a>
                                 </figure>
-                            </dd> 
+                            </div> 
 
-                            <dd>
-                                <figure>
+                            <div>
+                                <figure class="social_icon">
                                     <a href="https://twitter.com/prefrecife">
-                                        <img src="recursos/twit.png" alt="twitter" width="40" height="40">
+                                        <img src="recursos/twit.png" alt="twitter">
                                     </a>   
                                     <a href="https://twitter.com/prefrecife">Twitter</a>
                                 </figure>
-                            </dd>
-                    </dl>   
-                </Nav>
+                            </div>
+                        </div>  
+                            
+                    </div>   
             </section>
-
         </div>
-
         <small>Página criada para resolução do exercício em grupo da Aula 07 de HTML, proporcionado pela Alpha Edtech.</small>
     </footer>
 </body>
