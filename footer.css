@@ -1,0 +1,121 @@
+footer{
+    width: 100vw;
+    line-height: 20px;
+}
+
+
+footer h3{
+    font-size: 1.3rem;
+    color: rgb(225, 228, 253);
+}
+
+
+footer h2{
+    font-size: 1.8rem;
+    color: rgb(225, 228, 253);
+}
+
+.container_geral_footer, .nav_footer_container, .footer_contat, .footer_social, .social_icon{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav_footer_container, .footer_contat, .footer_social{
+    margin: 0 20px;
+    text-align: center;
+}
+
+.container_geral_footer{
+    background-color: #06063e;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 60vh;
+
+    font-family: "Roboto", sans-serif;
+}
+
+/* animating the phrase "agradecemos a visita" */
+ .container_geral_footer > h2{
+    animation: thanks;
+    animation: thanks 3s linear 3s forwards;
+}
+
+.nav_footer_container a{
+    margin: 10px;
+}
+
+.container_footer_contat{
+    width: 80vw;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
+    transform: translateX(-30px);
+}
+
+.container_social{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80vw;
+}
+
+footer a{
+    font-weight: bold;
+    text-decoration: none;
+    color:rgb(225, 228, 253);
+    font-size: 0.9rem;
+    
+}
+footer a:hover{
+    text-decoration: underline;
+    scale: 104%;
+}
+
+footer a:visited{
+    color:rgb(225, 228, 253);
+}
+
+.contaticon p{
+    font-family: "Roboto" , sans-serif;
+    font-size: 0.8rem;
+    color:rgb(225, 228, 253);   
+    text-transform: uppercase;
+}
+
+.contaticon{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+.contaticon img{
+    width: 5vw;
+    height: 10vh;
+    padding: 20px;
+    
+}
+
+.social_icon img{
+    height: 5vh;
+}
+/* animating the phrase "agradecemos a visita" */
+@keyframes thanks {
+    0%{
+        color:rgb(225, 228, 253);
+    }
+
+    50% {
+        transform: translateY(-20vh);
+        color: #06063e;
+    }
+
+    100%{
+        transform: translateY(-20vh);
+        color: #06063e;
+    }
+}
