@@ -1,0 +1,274 @@
+@import url("./footer.css");]
+@import url("./header.css");
+/* Conteudo principal */
+html{
+    scroll-behavior: smooth;
+}
+#container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e1/Praia_do_Pina_-_Recife%2C_Pernambuco%2C_Brasil.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+#container p{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+
+    outline: 1px solid black;
+    transition: all 0.5s ease-in-out; 
+}
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Inicio do conteúdo dos pontos turisticos */
+#info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin-bottom: 2%;
+    font-size: 1.2rem;  
+    width: 90%;
+}
+#info>h1{
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 25%;
+    outline: 1px solid black;
+    transition: all 0.5s ease-in-out; 
+}
+.to-left{
+    text-align: left;
+}
+#pontosTuristicos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+
+}
+#pontosTuristicos>a:hover{
+    color: initial;
+
+}
+
+.pontos{
+    width: 25%;
+    transition: all 1s ease-in-out;
+    outline: 5px solid black;
+}
+.pontos:hover{
+    overflow: hidden;
+    scale: 1.07;
+}
+
+/* Inicio do contúdo das Praias */
+
+.praias{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+
+   width: 90%;
+   font-size: 1.2rem;
+   gap:1rem;
+
+   background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e1/Praia_do_Pina_-_Recife%2C_Pernambuco%2C_Brasil.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment:fixed;
+
+   padding-top: 30px;
+   padding-bottom: 30px;
+   
+   text-decoration: none;
+}
+.praias>h2{
+    width: 30%;
+    padding: 10px;
+    background-color: white;
+    transition: all 0.5s ease-in-out; 
+    outline: 1px solid black;
+}
+.links{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 100px;
+}
+.list-ol{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10rem;}
+.li-container{
+    list-style: none;
+    display: flex;
+    gap:1rem;
+    justify-content: center;
+    align-items: center; 
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+    justify-content: center;
+    width: 30%;
+    text-align: left;
+    text-decoration: none;
+}
+li>img{
+    width: 38%;
+    outline:3px solid black;
+    transition: all 0.5s ease-in-out;   
+}
+.box>h3:hover,p:hover,h2:hover{
+    scale: 1.03;
+}
+img:hover{
+    scale: 1.03;
+}
+.box>h3{
+    text-align: center;
+    width: 80%;
+}
+.box>h3,.box>p,img{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+
+    outline: 1px solid black;
+    transition: all 0.5s ease-in-out; 
+}
+h3{
+    width: 38%;
+}
+/* RESPONSIVIDADE DO CONTAINER PRAIA */
+@media (max-width: 768px){
+
+      .li-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .praias>p{
+        width:50%;
+      }
+      .box>h3{
+        width: 80%;
+      }
+      .box>p{
+        width: 140%;
+      }
+      .li-container>img{
+        display: flex;
+        width: 60%;
+        align-self: center;
+      }
+      .links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+}
+/* Início do container de cultura */
+
+  .cultura{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-image: url("https://www.enjoytrip.com.br/wp-content/uploads/2019/07/Parque-Esculturas-Foto-Andrea-Rego-Barros-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 2rem;
+  }
+  .text-video{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap:2rem;
+  }
+  .text-video>h2{
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    outline: 1px solid black;
+    transition: all 0.5s ease-in-out;
+  }
+  iframe{
+    outline: 1px solid black;
+    width:90%;
+  }
+  ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+li> h3{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    outline: 1px solid black;
+    transition: all 0.5s ease-in-out; 
+}
+ul>li{
+    display: flex;
+}
+.marco{
+    display: none;
+}
+/* Inicio do container do carnaval */
+
+.carnaval{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/4b/Carnaval_do_Recife.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
