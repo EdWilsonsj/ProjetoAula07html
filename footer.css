@@ -1,12 +1,14 @@
 footer{
-    width: 100vw;
+    width: 100%;
     line-height: 20px;
 }
 
 
 footer h3{
+    width: 50%;
     font-size: 1.3rem;
     color: rgb(225, 228, 253);
+    padding-right: 5%;
 }
 
 
@@ -26,10 +28,18 @@ footer h2{
     text-align: center;
 }
 
+.footer_contat{
+    padding-bottom: 3%;
+}
+
+.footer_social{
+    padding-top: 3%;
+}
+
 .container_geral_footer{
     background-color: #06063e;
     justify-content: space-evenly;
-    width: 100vw;
+    width: 100%;
     height: 60vh;
 
     font-family: "Roboto", sans-serif;
@@ -85,17 +95,25 @@ footer a:visited{
 }
 
 .contaticon{
+    width: 30%;
     display:flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 100px;
+    /* margin-left: 100px; */
+    border-left: 2px solid #fff;
 }
 
+#page-icon{
+    border-left: none;
+}
+
+
+
 .contaticon img{
-    width: 5vw;
-    height: 10vh;
+    width: 80px;
+    height: 80px;
     padding: 20px;
     
 }
@@ -110,12 +128,12 @@ footer a:visited{
     }
 
     50% {
-        transform: translateY(-20vh);
+        transform: translateY(-15vh);
         color: #06063e;
     }
 
     100%{
-        transform: translateY(-20vh);
+        transform: translateY(-15vh);
         color: #06063e;
     }
 }
