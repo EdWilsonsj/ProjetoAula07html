@@ -1,35 +1,23 @@
+/* footer container */
 footer{
-    width: 100%;
     line-height: 20px;
+    font-size: 16px;
 }
 
-
+/* footer tittles */
 footer h3{
-    width: 50%;
     font-size: 1.3rem;
     color: rgb(225, 228, 253);
-    padding-right: 5%;
 }
 
-
-footer h2{
-    font-size: 1.8rem;
-    color: rgb(225, 228, 253);
-}
-
-.container_geral_footer, .nav_footer_container, .footer_contat, .footer_social, .social_icon{
+.container_geral_footer, .footer_contat, .footer_social, .social_icon{
     display:flex;
     flex-direction: column;
     align-items: center;
 }
 
-.nav_footer_container, .footer_contat, .footer_social{
-    margin: 0 20px;
-    text-align: center;
-}
-
-.footer_contat{
-    padding-bottom: 3%;
+.footer_contat, .footer_social{
+    text-align: center;    
 }
 
 .footer_social{
@@ -39,43 +27,44 @@ footer h2{
 .container_geral_footer{
     background-color: #06063e;
     justify-content: space-evenly;
-    width: 100%;
-    height: 60vh;
+   
+    height: 50vh;
 
     font-family: "Roboto", sans-serif;
+    padding-bottom: 2vh;
 }
 
 /* animating the phrase "agradecemos a visita" */
- .container_geral_footer > h2{
+.container_geral_footer > h2{
+    font-size: 1.7rem;
+    color: rgb(225, 228, 253);
     animation: thanks;
     animation: thanks 3s linear 3s forwards;
-}
-
-.nav_footer_container a{
-    margin: 10px;
-}
+} 
 
 .container_footer_contat{
-    width: 80vw;
     display:flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     font-weight: bold;
-    transform: translateX(-30px);
+    width: 1000px;
 }
 
 .container_social{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    width: 80vw;
+    width: 20%;
 }
 
-footer a{
+footer a, 
+footer p{
+    font-family: "Roboto" , sans-serif;
     font-weight: bold;
     text-decoration: none;
     color:rgb(225, 228, 253);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
     
 }
 footer a:hover{
@@ -87,17 +76,10 @@ footer a:visited{
     color:rgb(225, 228, 253);
 }
 
-.contaticon p{
-    font-family: "Roboto" , sans-serif;
-    font-size: 0.8rem;
-    color:rgb(225, 228, 253);   
-    text-transform: uppercase;
-}
-
 .contaticon{
-    width: 30%;
+    width: 28%;
     display:flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -109,17 +91,13 @@ footer a:visited{
     border-left: none;
 }
 
-
-
 .contaticon img{
-    width: 80px;
-    height: 80px;
+    width: 73px;
     padding: 20px;
-    
 }
 
 .social_icon img{
-    height: 5vh;
+    height: 4vh;
 }
 /* animating the phrase "agradecemos a visita" */
 @keyframes thanks {
@@ -128,12 +106,70 @@ footer a:visited{
     }
 
     50% {
-        transform: translateY(-15vh);
+        transform: translateY(-18vh);
         color: #06063e;
     }
 
     100%{
-        transform: translateY(-15vh);
+        transform: translateY(-14vh);
         color: #06063e;
+    }
+}
+
+@media (min-width:600px) and (max-width:800px){
+    .container_footer_contat{
+        width: 750px;
+    }
+}
+
+@media (min-width:320px) and (max-width:599px){
+    footer{
+        margin-top: 5%;
+    }
+    .container_footer_contat{
+        width: 400px;
+        flex-direction: column;
+    }
+
+    .contaticon img{
+        width: 60px;
+        /* height: 65px; */
+        padding: 15px;
+    }
+
+    .contaticon{
+        width: 100%;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border:none;
+    }
+    .contaticon p ,
+    .contaticon a{
+        font-size: 0.8rem
+    }
+    .container_geral_footer > h2{
+        font-size: 1.5rem;
+    } 
+    footer h3{
+        font-size: 1.2rem;
+        color: rgb(225, 228, 253);
+    }
+
+    @keyframes thanks {
+        0%{
+            color:rgb(225, 228, 253);
+        }
+    
+        50% {
+            transform: translateY(-12vh);
+            color: #06063e;
+        }
+    
+        100%{
+            transform: translateY(-9vh);
+            color: #06063e;
+        }
     }
 }
