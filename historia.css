@@ -16,13 +16,22 @@ body{
 /*HEADER*/
 
 /*TITULO*/
-h1{
-    color: rgb(139, 0, 0);
+#titulo-historia{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 0px 20px 0px;
-    background-color: #78faca;
+    flex-direction: row;
+    padding: 2% 0% 1% 0%;
+}
+h1{
+    color: rgb(245, 245, 245);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    width: 40%;
+    background-color: #550303;
     border-radius: 60px;
     font-family: 'Roboto', sans-serif;
 }
@@ -95,13 +104,13 @@ h1{
 }
 /*SUBTITULO*/
 .subtitulo{
-    color: rgb(139, 0, 0);
+    color: rgb(245, 245, 245);
+    padding: 20px 0px 20px 0px;
+    background-color: #550303;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 0px 20px 0px;
     font-size: 32px;
-    background-color: #78faca;
     border-radius: 40px;
     font-family: 'Roboto', sans-serif;
 }
@@ -111,20 +120,30 @@ table{
     border: 1px solid black;
 }
 tr:nth-child(even) {
-    background-color: aqua;
+    background-color: #5503038c;
     border-collapse: collapse;
 }
 /*SUBTITULOZINHO*/
 .subtitulozinho{
-    color: rgb(139, 0, 0);
+    color: rgb(245, 245, 245);
+    padding: 20px 0px 20px 0px;
+    background-color: #550303;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 25px;
-    padding: 15px 0px 20px 0px;
     font-family: 'Oswald', sans-serif;
-    background-color: #78faca;
     border-radius: 40px;
+}
+#botao-subtitulozinho{
+    background-color: rgb(2, 2, 109);
+    font-size: 15px;
+    padding: 8px 0px 8px 0px;
+    margin-bottom: 5%;
+}
+#botao-subtitulozinho h3, #botao-subtitulozinho a{
+    font-size: 15px;
+    color: #e5e3e8;
 }
 .lista{
     font-family: 'Libre Franklin', sans-serif;
@@ -247,3 +266,9 @@ tr:nth-child(even) {
     justify-content: space-evenly;
 }
 /*FOOTER*/
+.contaticon img{
+    width: 80px;
+    height: 80px;
+
+    
+}
