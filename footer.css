@@ -27,7 +27,8 @@ footer h3{
 .container_geral_footer{
     background-color: #06063e;
     justify-content: space-evenly;
-   
+    
+    width: 100vw;
     height: 50vh;
 
     font-family: "Roboto", sans-serif;
